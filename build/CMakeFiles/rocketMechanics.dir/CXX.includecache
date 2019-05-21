@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Danil/Desktop/rocketCalculation/Orbit.cpp
+Orbit.hpp
+/Users/Danil/Desktop/rocketCalculation/Orbit.hpp
+
+/Users/Danil/Desktop/rocketCalculation/Orbit.hpp
+iostream
+-
+

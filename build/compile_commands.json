@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/Users/Danil/Desktop/rocketCalculation/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/rocketMechanics.dir/main.cpp.o -c /Users/Danil/Desktop/rocketCalculation/main.cpp",
+  "file": "/Users/Danil/Desktop/rocketCalculation/main.cpp"
+},
+{
+  "directory": "/Users/Danil/Desktop/rocketCalculation/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/rocketMechanics.dir/matrix.cpp.o -c /Users/Danil/Desktop/rocketCalculation/matrix.cpp",
+  "file": "/Users/Danil/Desktop/rocketCalculation/matrix.cpp"
+},
+{
+  "directory": "/Users/Danil/Desktop/rocketCalculation/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/rocketMechanics.dir/Orbit.cpp.o -c /Users/Danil/Desktop/rocketCalculation/Orbit.cpp",
+  "file": "/Users/Danil/Desktop/rocketCalculation/Orbit.cpp"
+},
+{
+  "directory": "/Users/Danil/Desktop/rocketCalculation/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/rocketMechanics.dir/Rocket.cpp.o -c /Users/Danil/Desktop/rocketCalculation/Rocket.cpp",
+  "file": "/Users/Danil/Desktop/rocketCalculation/Rocket.cpp"
+}
+]
