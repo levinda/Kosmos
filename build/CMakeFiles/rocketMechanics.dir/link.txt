@@ -1,1 +1,0 @@
-/usr/bin/clang++  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/rocketMechanics.dir/main.cpp.o CMakeFiles/rocketMechanics.dir/matrix.cpp.o CMakeFiles/rocketMechanics.dir/Orbit.cpp.o CMakeFiles/rocketMechanics.dir/Rocket.cpp.o  -o rocketMechanics 
