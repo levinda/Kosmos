@@ -5,7 +5,7 @@
 
 class Orbit{
 private:
-    // Orbit parameters
+    // Orbit parameters in coordinates of a rotation 
     double periapsis;
     double incl;
     double e;
