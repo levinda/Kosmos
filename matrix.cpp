@@ -3,6 +3,7 @@
 
 #include "matrix.hpp"
 
+
 // Parameter Constructor                                                                                                                                                      
 template<typename T>
 QSMatrix<T>::QSMatrix(unsigned _rows, unsigned _cols, const T& _initial) {

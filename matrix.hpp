@@ -13,6 +13,8 @@ template <typename T> class QSMatrix {
  public:
   QSMatrix(unsigned _rows, unsigned _cols, const T& _initial);
   QSMatrix(const QSMatrix<T>& rhs);
+  // Инициализация вектора
+  QSMatrix(const std::vector<T>)
   virtual ~QSMatrix();
 
 
