@@ -14,8 +14,9 @@ private:
     Vector3 thrustVector;
 public:
     Rocket(Engine engine, double mass, Vector3, Vector3, Vector3);
-    //Список если сделать множественные силы, например от разных двигателей
+    // Список если сделать множественные силы, например от разных двигателей
     void makeMovementWithForces();
+    void printStatus();
 };
 #endif
 

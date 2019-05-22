@@ -127,7 +127,7 @@ QSMatrix<T>& QSMatrix<T>::operator-=(const QSMatrix<T>& rhs) {
 // Left multiplication of this matrix and another                                                                                                                              
 template<typename T>
 QSMatrix<T> QSMatrix<T>::operator*(const QSMatrix<T>& rhs) {
-  unsigned rows = rhs.get_rows();
+  unsigned rows = this->get_rows();
   unsigned cols = rhs.get_cols();
   QSMatrix result(rows, cols, 0.0);
 
@@ -234,6 +234,14 @@ std::vector<T> QSMatrix<T>::operator*(const std::vector<T>& rhs) {
   return result;
 }
 
+//MARK: Vector Operations
+
+template<typename T> T& QSMatrix<T>::scalar(QSMatrix<T>& lhs ,QSMatrix<T>& rhs){
+  if(lhs.rows == rhs.rows && lhs.cols == rhs.cols == 1){
+    return (lhs * rhs.transpose());
+  } 
+}
+
 // Obtain a vector of the diagonal elements                                                                                                                                   
 template<typename T>
 std::vector<T> QSMatrix<T>::diag_vec() {
@@ -269,6 +277,8 @@ template<typename T>
 unsigned QSMatrix<T>::get_cols() const {
   return this->cols;
 }
+
+
 
 
 #endif

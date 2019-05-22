@@ -1,4 +1,5 @@
-
+#ifndef ENGINGE_H
+#define ENGINGE_H
 #include <string>
 
 class Engine{
@@ -14,4 +15,6 @@ public:
     double getCurrentForce();
     bool isEngineOn();
     // По-хорошему если это была бы полноценная симуляция, то здесь должен быть idle vector (направление тяги)
-}
+};
+
+#endif

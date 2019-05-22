@@ -10,3 +10,7 @@ Engine::Engine(){
 Engine::Engine(double force){
     maxForce = force;
 }
+
+double Engine::getCurrentForce(){
+    return maxForce * forceLevel;
+}

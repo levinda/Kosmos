@@ -13,17 +13,13 @@ template <typename T> class QSMatrix {
  public:
   QSMatrix(unsigned _rows, unsigned _cols, const T& _initial);
   QSMatrix(const QSMatrix<T>& rhs);
-  // Инициализация вектора
-  QSMatrix(const std::vector<T>)
   virtual ~QSMatrix();
-
-
-  // Prints out MatrixToTerminal
-  void print();
 
   // Operator overloading, for "standard" mathematical matrix operations                                                                                                                                                          
   QSMatrix<T>& operator=(const QSMatrix<T>& rhs);
 
+
+  void print();
   // Matrix mathematical operations                                                                                                                                                                                               
   QSMatrix<T> operator+(const QSMatrix<T>& rhs);
   QSMatrix<T>& operator+=(const QSMatrix<T>& rhs);
@@ -38,10 +34,13 @@ template <typename T> class QSMatrix {
   QSMatrix<T> operator-(const T& rhs);
   QSMatrix<T> operator*(const T& rhs);
   QSMatrix<T> operator/(const T& rhs);
-
+ 
   // Matrix/vector operations                                                                                                                                                                                                     
   std::vector<T> operator*(const std::vector<T>& rhs);
   std::vector<T> diag_vec();
+
+  // Vector/Vector operations
+   T& scalar(QSMatrix<T>&,QSMatrix<T>&);
 
   // Access the individual elements                                                                                                                                                                                               
   T& operator()(const unsigned& row, const unsigned& col);
@@ -52,5 +51,8 @@ template <typename T> class QSMatrix {
   unsigned get_cols() const;
 
 };
+
+
+#include "matrix.cpp"
 
 #endif
